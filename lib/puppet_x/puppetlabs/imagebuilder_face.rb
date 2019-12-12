@@ -115,6 +115,11 @@ module PuppetX
         summary 'A Puppet Master to use for building images'
       end
 
+      option '--[no-]timestamp' do
+        summary 'Include a timestamp in the Puppet certificate name'
+        default_to { true }
+      end
+
       option '--label-schema' do
         summary 'Add label-schema compatible labels'
         default_to { false }
