@@ -39,6 +39,10 @@ module PuppetX
         summary 'A path to a directory containing a set of modules to be copied into the image'
       end
 
+      option '--puppet-extra-settings STRING' do
+        summary 'Additional Puppet command-line settings'
+      end
+
       option '--expose STRING' do
         summary 'A list of ports to be exposed by the resulting image'
       end
